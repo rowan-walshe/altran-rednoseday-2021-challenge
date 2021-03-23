@@ -2,7 +2,9 @@
     write(K), nl,
     halt.
 
-%% Parses the input file into a list of instructions, converts those into key values, and the makes it into a string
+%% Parses the input file into a list of instructions,
+%%  converts those instructions into keypad values,
+%%  and the makes it into a string
 get_key_code(F,K):-
     parse_file(F,Ls),
     parse_instructions(Ls,Ns),
