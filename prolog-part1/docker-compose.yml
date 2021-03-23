@@ -1,0 +1,6 @@
+version: '3'
+services:
+    swipl:
+      build: ./
+      volumes:
+        - ./:/app
